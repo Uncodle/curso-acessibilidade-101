@@ -327,7 +327,69 @@ body, html {
     height: 5px;
 }
 
-/** Faq **/
+/** Blog **/
+
+.block__blog .block__header {
+    padding: 45px;
+    margin-bottom: 65px;
+    background-color: #5267df;
+}
+
+.block__blog .post__article {
+    margin-bottom: 65px;
+}
+
+
+.block__blog .header__title {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.block__blog .header__subtitle {
+    color: inherit;
+}
+
+.post__article .post__article {
+    margin-bottom: 65px;
+}
+
+.block__blog .post__footer {
+    margin-top: 35px;
+}
+
+.post__article .post__header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+.post__article .post__title {
+    font-size: 2.5em;
+}
+
+
+.post__article .post__subtitle {
+    font-size: 1.2em;
+}
+
+.post__article .post__content {
+    font-size: 1em;
+    color: #666;
+    line-height: 32px;
+}
+
+/** DEMO **/
+
+.block__demo {
+    margin: 45px 0;
+}
+
+.block__demo .demo__video {
+    width: 100%;
+    height: 100%;
+}
+
+/** FAQ **/
 
 .block__faq {
     margin-top: 90px;
@@ -394,6 +456,13 @@ body, html {
 .accordion .btn-link:hover {
     color: var(--soft-red-color);   
 }
+
+/** Contact **/
+
+.block__contact {
+    margin-top: 45px;
+}
+
 
 /** Newsletter **/
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -16,33 +16,39 @@
 
   <div class="header">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">
-        <img class="header__logo" src="images/logo-bookmark.svg" alt="Bookmark">
+        <img class="header__logo" src="images/logo-bookmark.svg" alt="">
       </a>
-      <a class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
+      <a class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarNav">
         <span class="fa fa-bars"></span>
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Funcionalidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Download</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Demo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="button button--secondary" href="/login.html">Login</a>
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <button class="button button--secondary" data-toggle="modal" data-target="#loginModal" href="/login.html">Login</button>
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   </div>
 
   <div class="block__main">
@@ -50,17 +56,17 @@
       <div class="block__wrapper">
         <div class="block__content">
           <div class="block__header">
-            <h1 class="block__title">A Simple Bookmark Manager</h1>
+            <h1 class="block__title">Um gerenciador de favoritos simples</h1>
           </div>
   
             <p class="block__description">
-              A clean and simple interface to organize your favourite websites. 
-              Open a new browser tab and see your sites load instantly. Try it for free.
+              Uma interface limpa e simples para organizar seus sites favoritos.
+              Abra uma nova guia do navegador e veja seus sites carregarem instantaneamente. Experimente Grátis.
             </p>
   
             <div class="block__footer">
-              <a class="button button--primary" href=""> Get it on Chrome</a>
-              <a class="button button--tertiary" href="">Get it on Firefox</a>
+              <a class="button button--primary" href=""> Obtenha no Chrome</a>
+              <a class="button button--tertiary" href="">Obtenha no Firefox</a>
             </div>
         </div>
         <div class="block__image">
@@ -75,83 +81,83 @@
     <div class="container">
       <div class="block__wrapper">
         <div class="block__header">
-          <h2 class="header__title">Features</h2>
+          <h2 class="header__title">Funcionalidades</h2>
       
           <p class="header__subtitle">
-            Our aim is to make it quick and easy for you to access your favourite websites. 
-            Your bookmarks sync between your devices so you can access them on the go.
+            Nosso objetivo é tornar rápido e fácil o acesso aos seus sites favoritos.
+            Seus favoritos são sincronizados entre seus dispositivos para que você possa acessá-los em qualquer lugar.
           </p>
         </div>
         
     
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Simple Bookmarking</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Speedy Searching</a>
-          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Sharing</a>
+        <div class="nav nav-tabs" id="nav-tab">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"></a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile">Pesquisa Rápida</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact">Compartilhamento fácil</a>
         </div>
     
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="tab-pane fade show active" id="nav-home">
             <div class="panel__wrapper">
               <div class="panel__image">
-                <img src="images/illustration-features-tab-1.svg" alt="Simple bookmarking">
+                <img src="images/illustration-features-tab-1.svg" alt="">
               </div>
               <div class="panel__content">
 
                 <div class="content__header">
-                  <h2 class="content__title">Bookmark in one click</h2>
+                  <h2 class="content__title">Favorite com um clique</h2>
                 </div>
 
                 <p class="content__description">
-                  Organize your bookmarks however you like. 
-                  Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+                  Organize seus favoritos como quiser.
+                  Nossa interface simples de arrastar e soltar oferece controle total sobre como você gerencia seus sites favoritos.
                 </p>
         
                <div class="content__footer">
-                  <a class="button button--primary" href="">More info</a>
+                  <a class="button button--primary" href="">Mais informações</a>
                </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div class="tab-pane fade" id="nav-profile">
             <div class="panel__wrapper">
               <div class="panel__image">
-                <img src="images/illustration-features-tab-2.svg" alt="Simple bookmarking">
+                <img src="images/illustration-features-tab-2.svg" alt="">
               </div>
               <div class="panel__content">
 
                 <div class="content__header">
-                  <h2 class="content__title">Intelligent search</h2>
+                  <h2 class="content__title">Busca inteligente</h2>
                 </div>
                 
                 <p class="content__description">
-                  Our powerful search feature will help you find saved sites in no time at all. 
-                  No need to trawl through all of your bookmarks.
+                  Nosso poderoso recurso de pesquisa o ajudará a encontrar sites salvos rapidamente.
+                  Não há necessidade de vasculhar todos os seus favoritos.
                 </p>
                 
                 <div class="content__footer">
-                  <a class="button button--primary" href="">More info</a>
+                  <a class="button button--primary" href="">Mais informações</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <div class="tab-pane fade" id="nav-contact">
             <div class="panel__wrapper">
               <div class="panel__image">
-                <img src="images/illustration-features-tab-3.svg" alt="Simple bookmarking">
+                <img src="images/illustration-features-tab-3.svg" alt="">
               </div>
               <div class="panel__content">
                 <div class="content__header">
-                  <h2 class="content__title">Share your bookmarks</h2>
+                  <h2 class="content__title">Compartilhe seus favoritos</h2>
                 </div>
                 
                 <p class="content__description">
-                  Easily share your bookmarks and collections with others. Create a shareable 
-                  link that you can send at the click of a button.
+                  Compartilhe facilmente seus favoritos e coleções com outras pessoas. 
+                  Crie um compartilhável link que você pode enviar com o clique de um botão.
                 </p>
         
                 <div class="content__footer">
-                  <a class="button button--primary" href="">More info</a>
+                  <a class="button button--primary" href="">Mais informações</a>
                 </div>
               </div>
             </div>
@@ -162,51 +168,52 @@
   </div>
   <!-- Features -->
 
+  
   <!-- Downloads -->
   <div class="block__downloads">
     <div class="container">
       <div class="block__header">
-        <h2 class="header__title">Download the extension</h2>
+        <h2 class="header__title">Baixe a extensão</h2>
         <p class="header__subtitle">
-          We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-          got a favourite you’d like us to prioritize.
+          Temos mais navegadores em desenvolvimento. 
+          Informe-nos se você tem um favorito que você gostaria que priorizássemos.
         </p>
       </div>
   
       <div class="supported__browsers">
         <div class="browser browser--chrome">
           <div class="block__header">
-            <img class="browser__icon" src="images/logo-chrome.svg" alt="Add to Opera">
-            <h3 class="browser__title">Add to Chrome</h3>
-            <small class="browser__version">Minimum version 62</small>
+            <img class="browser__icon" src="images/logo-chrome.svg">
+            <h3 class="browser__title">Adicionar ao Chrome</h3>
+            <small class="browser__version">Versão mínima 62</small>
           </div> 
           <div class="block__separator"></div>
           <div class="block__footer">
-            <a class="button button--primary" href="#">Add & Install Extension</a>
+            <a class="button button--primary" href="#">Adicionar e instalar extensão</a>
           </div>
         </div>
   
         <div class="browser browser--firefox">
           <div class="block__header">
-            <img class="browser__icon" src="images/logo-firefox.svg" alt="Add to Opera">
-            <h3 class="browser__title">Add to Firefox</h3>
-            <small class="browser__version">Minimum version 55</small>
+            <img class="browser__icon" src="images/logo-firefox.svg">
+            <h3 class="browser__title">Adicionar ao Firefox</h3>
+            <small class="browser__version">Versão mínima 55</small>
           </div> 
           <div class="block__separator"></div>
           <div class="block__footer">
-            <a class="button button--primary" href="#">Add & Install Extension</a>
+            <a class="button button--primary" href="#">Adicionar e instalar extensão</a>
           </div>
         </div>
   
         <div class="browser browser--opera">
           <div class="block__header">
-            <img class="browser__icon" src="images/logo-opera.svg" alt="Add to Opera">
-            <h3 class="browser__title">Add to Opera</h3>
-            <small class="browser__version"> Minimum version 46</small>
+            <img class="browser__icon" src="images/logo-opera.svg">
+            <h3 class="browser__title">Adicionar ao Opera</h3>
+            <small class="browser__version"> Versão mínima 46</small>
           </div> 
           <div class="block__separator"></div>
           <div class="block__footer">
-            <a class="button button--primary" href="#">Add & Install Extension</a>
+            <a class="button button--primary" href="#">Adicionar e instalar extensão</a>
           </div>
         </div>
       </div>
@@ -214,14 +221,29 @@
   </div>
   <!-- Downloads -->
 
+   <!-- Demo -->
+   <div class="block__demo">
+    <div class="container">
+      <div class="block__header">
+        <h2 class="header__title">Demonstração</h2>
+        <p class="header__subtitle">
+          Veja como funciona!
+        </p>
+      </div>
+
+      <video class="demo__video" autoplay_ src="https://iandevlin.github.io/mdn/video-player-with-captions/video/sintel-short.mp4"></video>
+    </div>
+  </div>
+  <!-- Demo -->
+
   <!-- FAQ -->
   <section class="block__faq">
     <div class="container">
       <div class="block__header">
-        <h2 class="header__title">Frequently Asked Questions</h2>
+        <h2 class="header__title">Perguntas Frequentes</h2>
         <p class="header__subtitle">
-          Here are some of our FAQs. If you have any other questions you’d like 
-          answered please feel free to email us.
+          Aqui estão algumas de nossas perguntas frequentes. Se você tiver alguma outra pergunta que queira
+          respondeu, sinta-se à vontade para nos enviar um e-mail.
         </p>
       </div>
 
@@ -230,14 +252,14 @@
           <div class="card">
             <div class="card-header" id="headingOne">
               <h3 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  What is Bookmark?
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+                  O que é favorito?
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </h3>
             </div>
         
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
               <div class="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
               </div>
@@ -246,13 +268,13 @@
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h3 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How can I request a new browser?
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">
+                  Como posso solicitar um novo navegador?
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </h3>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
               <div class="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
               </div>
@@ -261,13 +283,13 @@
           <div class="card">
             <div class="card-header" id="headingThree">
               <h3 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Is there a mobile app?
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">
+                  Existe um aplicativo móvel?
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </h3>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
               <div class="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
               </div>
@@ -276,13 +298,13 @@
           <div class="card">
             <div class="card-header" id="headingThree">
               <h3 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                  What about other Chromium browsers?
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour">
+                  E quanto a outros navegadores Chromium?
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </h3>
             </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div id="collapseFour" class="collapse" data-parent="#accordion">
               <div class="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
               </div>
@@ -291,7 +313,7 @@
         </div>
     
         <div class="block__actions">
-          <a class="button button--primary" href="">More info</a>
+          <a class="button button--primary" href="">Mais informações</a>
         </div>
       </div>
       
@@ -299,16 +321,52 @@
   </section>
   <!-- FAQ -->
 
+   <!-- Contact -->
+   <section class="block__contact">
+    <div class="container">
+      <div class="col-12 col-lg-6 offset-lg-3">
+        <div class="block__header">
+          <h2 class="header__title">Contato</h2>
+          <p class="header__subtitle">
+            Que tal nos escrever? Vamos tomar um café juntos!
+          </p>
+        </div>
+        <form class="form" method="post">
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="email" class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label>Endereço de email</label>
+            <input type="email" class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Assunto</label>
+            <textarea class="form-control" id="" rows="5"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label for="exampleCheck1">Deseja assinar nossa newsletter?</label>
+          </div>
+          <div class="block__actions text-center">
+              <button class="button button--secondary">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+
   <!-- Newsletter -->
   <div class="block__newsletter">
     <div class="block__wrapper">
       <div class="block__header">
-        <small class="header__subtitle">35,000+ already joined</small>
-        <h2 class="header__title">Stay up-to-date with what we’re doing</h2>
+        <small class="header__subtitle">Mais de 35.000 já aderiram</small>
+        <h2 class="header__title">Fique por dentro do que estamos fazendo</h2>
       </div>
       <form class="block__form" action="">
-        <input class="form__input" type="email" placeholder="Enter your email address">
-        <button class="button button--secondary">Contact us</button>
+        <input class="form__input" type="email" placeholder="Insira o seu endereço de email">
+        <button class="button button--secondary">Enviar</button>
       </form>
     </div>
   </div>
@@ -318,11 +376,15 @@
   <div class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <img class="footer__logo" src="images/logo-bookmark.svg" alt="Bookmark">
+        <img class="footer__logo" src="images/logo-bookmark.svg" alt="">
           <ul class="footer__nav">
-            <li><a class="nav__link" href="">Features</a></li>
-            <li><a class="nav__link" href="">Pricing</a></li>
-            <li><a class="nav__link" href="">Contact</a></li>
+            <li><a class="nav__link" href="">Funcionalidades</a></li>
+            <li><a class="nav__link" href="">Download</a></li>
+            <li><a class="nav__link" href="#">Demo</a></li>
+            <li><a class="nav__link" href="#">FAQ</a></li>
+            <li><a class="nav__link" href="">Contato</a></li>
+
+            <li><a class="nav__link" href="blog.html">Blog</a></li>
           </ul>
 
           <ul class="footer__social">
@@ -337,6 +399,38 @@
     </div>
   </div>
   <!-- Footer -->
+
+  <!-- Modal -->
+    <div class="modal fade" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Fazer login</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Manter conectado</label>
+              </div>
+              <button type="submit" class="btn btn-primary mt-2">Entrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- Modal -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
